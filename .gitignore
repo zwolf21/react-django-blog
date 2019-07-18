@@ -21,3 +21,18 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# python
+/[Ss]cripts/
+/[Bb]in/
+/[Ll]ib/
+/[Tt]cl/
+/[Ii]nclude/
+/media
+__pycache__/
+.vscode/
+man/
+.Python
+*.py[cod]
+pip-selfcheck.json
