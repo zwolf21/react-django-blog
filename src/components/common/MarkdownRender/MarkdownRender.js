@@ -31,6 +31,10 @@ class MarkdownRender extends Component {
     }
   }
 
+  componentDidMount() {
+    Prism.highlightAll();
+  }
+
   rednerMarkdown = () => {
     const { markdown } = this.props;
     if (!markdown) {
@@ -50,7 +54,6 @@ class MarkdownRender extends Component {
     const markup = {
       __html: html
     };
-    console.log("markdown:", markup);
     return (
       <div className={cx("markdown-render")} dangerouslySetInnerHTML={markup} />
     );
