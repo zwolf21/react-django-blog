@@ -1,2 +1,13 @@
+<<<<<<< HEAD
 .page-template {
 }
+=======
+@import '../../../styles/utils.scss';
+
+.page-template {
+    main {
+        background: $oc-gray-1;
+        min-height: calc(100vh - 15rem);
+    }
+}
+>>>>>>> e4f5591b0814399f9ade08028915cd1006274920
