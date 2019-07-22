@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-const PostPage = () => {
-  return <div>Post</div>;
-};
-
-export default PostPage;
-=======
 import React from "react";
 
 import PageTemplate from "../components/common/PageTemplate";
@@ -25,4 +16,3 @@ const PostPage = ({ match }) => {
 };
 
 export default PostPage;
->>>>>>> e4f5591b0814399f9ade08028915cd1006274920

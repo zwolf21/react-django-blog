@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-const ListPage = () => {
-  return <div>List</div>;
-};
-
-export default ListPage;
-=======
 import React from "react";
 
 import PageTemplate from "../components/common/PageTemplate";
@@ -25,4 +16,3 @@ const ListPage = ({ match }) => {
 };
 
 export default ListPage;
->>>>>>> e4f5591b0814399f9ade08028915cd1006274920

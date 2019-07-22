@@ -23,10 +23,11 @@ export default handleActions(
     ...pender({
       type: GET_POST_LIST,
       onSuccess: (state, action) => {
-        const { results, pageNumber } = action.payload.data;
+        const { results, count } = action.payload.data;
+        const pageCount = count > 0 ? count / results.length : 1;
         return {
           object_list: results,
-          lastPage: parseInt(pageNumber, 10)
+          lastPage: parseInt(pageCount)
         };
       }
     })
