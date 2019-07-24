@@ -8,7 +8,7 @@ import Button from "../Button";
 
 const cx = classNames.bind(styles);
 
-const Header = () => {
+const Header = ({ id, onRemove }) => {
   return (
     <header className={cx("header")}>
       <div className={cx("header-content")}>
@@ -16,6 +16,14 @@ const Header = () => {
           <Link to="/">React-Django Blog</Link>
         </div>
         <div className={cx("right")}>
+          {id && [
+            <Button key="edit" theme="outline" to={`/editor?id=${id}`}>
+              수정
+            </Button>,
+            <Button key="remove" theme="outline" onClick={onRemove}>
+              삭제
+            </Button>
+          ]}
           <Button theme="outline" to="/editor">
             새 포스트
           </Button>
